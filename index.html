@@ -7,30 +7,36 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <img src="/bg.jpg" class="bg-img">
-
-    <!-- body -->
+    <!-- background image -->
+    <img src="bg.jpg" class="bg" id="bg">
+    
     <div class="container">
-        <div class="">
+        <!-- body -->
+        <div class="login border col bgwhite">
 
-            <form action="/" method="GET" id="form">
-                <h2 class="black bold">Login</h2>
+            <form>
+                <h2 class="black">Login</h2>
 
-                <!-- input -->
-                <label for="email" class="">Email</label> <br>
-                <input type="email" id="email" class="" placeholder="Tulis email...">
-                <label for="password" class="black bold">Password</label> <br>
-                <input type="password" id="password" class="" placeholder="Tulis password...">
+                <!-- input email -->
+                <label for="email" class="black">Email</label> <br>
+                <input type="email" id="email" class="input border" placeholder="Tulis email..."> <br>
+                <!-- input password -->
+                <label for="password" class="black">Password</label> <br>
+                <input type="password" id="password" class="input border" placeholder="Tulis password..."> <br>
+                <div class="checkbox">
+                    <input type="checkbox" onclick="showPass()">Show Password
+                </div>
 
-                <div id="error"></div>
+                <div id="error" class="red"></div>
 
                 <!-- submit -->
-                <button type="button" onclick="inputData()" class="">Publish</button>
+                <button type="button" onclick="login()" class="border bgblue white">Login</button>
             </form>
 
         </div>
-
     </div>
 
+    <!-- alert welcome -->
+    <script>alert("Selamat Datang!")</script>
 </body>
 </html>
