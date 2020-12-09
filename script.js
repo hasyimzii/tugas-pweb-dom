@@ -4,7 +4,7 @@ function login() {
     var pass  = document.getElementById("password").value;
     var error = document.getElementById("error");
     
-    if(email == "admin@mail.com" && pass == "123123") {
+    if(email == "user@mail.com" && pass == "pwebB1047") {
         window.location = "success.html"
     } else {
         error.innerText = "invalid usename or password!"
